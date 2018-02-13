@@ -1,0 +1,18 @@
+﻿@using VideoHostingStreamingAWS.Models
+@model HomeViewModel
+
+@{
+    ViewBag.Title = "CloudFront Public";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CloudFront Public</h2>
+
+View the public cloudfront distro - direct from video tag URL
+<div class="row">
+    @Html.DisplayFor(m => m.URL)
+    <video id="testVideo" class="video-js vjs-default-skin" controls preload="none" data-setup="{}" style="width:90%">
+        <source src="@Model.URL" type="video/mp4" />
+        <p class="vjs-no-js">To view this video please enable Javascript</p>
+    </video>
+</div>

@@ -1,0 +1,17 @@
+﻿@using VideoHostingStreamingAWS.Models
+@model HomeViewModel
+
+@{
+    ViewBag.Title = "S3 Private Bucket";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>S3 Private</h2>
+The information below is pulled from a private S3 bucket
+<div class="row">
+    @Html.DisplayFor(m => m.URL)
+    <video id="testVideo" class="video-js vjs-default-skin" controls preload="none" data-setup="{}" style="width:90%">
+        <source src="@Model.URL" type="video/mp4" />
+        <p class="vjs-no-js">To view this video please enable Javascript</p>
+    </video>
+</div>
