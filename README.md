@@ -1,7 +1,7 @@
 # video-hosting-streaming-aws-s3-cloudfront-signedurls
 Video Hosting and Streaming w/ AWS S3 and CloudFront
 
-These code snippets are to be used to help with various video streaming scenarios. Each scenario described below is created as a separate function in the Home Controller, for ease of reuse. 
+These code snippets are to be used to help with various video streaming scenarios. Each scenario described below is created as a separate function in the Home Controller, for ease of reuse. The web.config appSettings will need to be updated with your AWS account details.
 
 1. Public S3 Bucket (most basic)
 - Uses a public AWS S3 bucket to host the video, for users to pull down for use in their websites.
